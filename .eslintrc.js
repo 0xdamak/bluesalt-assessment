@@ -32,8 +32,8 @@ module.exports = {
   },
   ignorePatterns: [
     ".eslintrc.js",
-    "next.config.js",
-    "postcss.config.js",
+    "next.config.mjs",
+    "postcss.config.mjs",
     "prettier.config.js",
     ".next/**/*",
   ],
