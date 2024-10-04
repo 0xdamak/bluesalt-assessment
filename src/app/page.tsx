@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
     },
     {
       title: "Assessment 2",
-      href: "",
+      href: "/app",
     },
   ] as const;
 
