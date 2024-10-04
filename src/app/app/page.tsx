@@ -251,12 +251,10 @@ export default function Dashboard(): JSX.Element {
                         label: "Traffic by location",
                         data: countryVisits.map(({ visits }) => visits),
                         backgroundColor: [
-                          "rgba(149, 164, 252, 1)",
-                          "rgba(186, 237, 189, 1)",
                           "rgba(28, 28, 28, 1)",
+                          "rgba(161, 227, 203, 1)",
                           "rgba(177, 227, 255, 1)",
                           "rgba(168, 197, 218, 1)",
-                          "rgba(161, 227, 203, 1)",
                         ],
                         borderRadius: 8,
                       },
