@@ -22,24 +22,24 @@ export default function Traffic(): JSX.Element {
           <Label yAxis="top">
             <h2>Street A</h2>
           </Label>
-          <div>
+          <div data-testid="traffic-light-street-a">
             <TrafficLight activeLight={streetA} timer={timer} />
           </div>
           <Label yAxis="bottom">
             <h2>Street B</h2>
           </Label>
-          <div>
+          <div data-testid="traffic-light-street-b">
             <TrafficLight activeLight={streetB} timer={timer} />
           </div>
           <div>
             <Button onClick={start}>Start</Button>
             <Button onClick={reset}>Reset</Button>
           </div>
-          <div>
+          <div data-testid="traffic-light-street-b">
             <TrafficLight activeLight={streetB} timer={timer} />
           </div>
           <div />
-          <div>
+          <div data-testid="traffic-light-street-a">
             <TrafficLight activeLight={streetA} timer={timer} />
           </div>
         </Crossroad>
