@@ -142,8 +142,8 @@ export const trafficMetrics = [
 ];
 
 export const countryVisits = [
-  { name: "Nigeria", visits: 20 },
-  { name: "Ghana", visits: 20 },
-  { name: "Kenya", visits: 20 },
-  { name: "Benin Republic", visits: 20 },
+  { name: "Nigeria", visits: 2000 },
+  { name: "Ghana", visits: 700 },
+  { name: "Kenya", visits: 300 },
+  { name: "Benin Republic", visits: 200 },
 ];
