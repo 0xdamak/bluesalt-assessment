@@ -285,7 +285,7 @@ export default function Dashboard(): JSX.Element {
                       {calculatePercentage(
                         visits,
                         countryVisits.map(({ visits }) => visits),
-                      )}
+                      ).toFixed(2)}
                       %
                     </p>
                   </li>
