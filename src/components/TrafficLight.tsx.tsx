@@ -18,11 +18,7 @@ const TrafficLightContainer = styled.div`
   border-radius: 0.625rem;
 `;
 
-const Light = styled.div<{
-  isActive: boolean;
-  backgroundColor: string;
-  color?: string;
-}>`
+const Light = styled.div<{ isActive: boolean; backgroundColor: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,17 +45,26 @@ export function TrafficLight({
 }: TrafficLightProps): JSX.Element {
   return (
     <TrafficLightContainer>
-      <Light backgroundColor="red" isActive={activeLight === "red"}>
+      <Light
+        backgroundColor="red"
+        isActive={activeLight === "red"}
+        data-testid="red-light"
+      >
         {activeLight === "red" && timer}
       </Light>
       <Light
         backgroundColor="yellow"
         color="black"
         isActive={activeLight === "yellow"}
+        data-testid="yellow-light"
       >
         {activeLight === "yellow" && timer}
       </Light>
-      <Light backgroundColor="green" isActive={activeLight === "green"}>
+      <Light
+        backgroundColor="green"
+        isActive={activeLight === "green"}
+        data-testid="green-light"
+      >
         {activeLight === "green" && timer}
       </Light>
     </TrafficLightContainer>
