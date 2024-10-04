@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import { Inter, IBM_Plex_Sans } from "next/font/google";
 import { clsx } from "clsx";
 import type { Metadata } from "next";
+import NextTopLoader from "nextjs-toploader";
 import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -43,6 +44,7 @@ export default function RootLayout({
           "antialiased",
         )}
       >
+        <NextTopLoader height={4} showSpinner={false} />
         {children}
       </body>
     </html>
